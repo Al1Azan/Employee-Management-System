@@ -1,0 +1,54 @@
+.full-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f1f1; /* Optional: To give a background color to the page */
+  }
+
+  .company-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Set a max-width to avoid it stretching too much */
+  }
+
+  .company-card h3 {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+  }
+
+  .company-card p {
+    font-size: 16px;
+    color: #495057;
+    margin-bottom: 10px;
+    text-align: center; /* Center the content */
+  }
+
+  .edit-btn {
+    color: #fff;
+    background-color: #0d6efd; /* Bootstrap primary color */
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+  }
+
+  .edit-btn:hover {
+    background-color: #0a58ca; /* Darker primary color on hover */
+  }
+
+  .company-info {
+    margin-bottom: 15px;
+  }
+
+  .company-info span {
+    font-weight: bold;
+  }
