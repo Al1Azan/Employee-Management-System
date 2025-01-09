@@ -5,11 +5,11 @@ import { CompanyInformationComponent } from '../company-information/company-info
 
 @Component({
   selector: 'app-employee-dashboard',
-  imports: [RouterLink],
+  imports: [RouterLink, RouterOutlet],
   templateUrl: './employee-dashboard.component.html',
   styleUrl: './employee-dashboard.component.css'
 })
 
 export class EmployeeDashboardComponent {
-
+  
 }
