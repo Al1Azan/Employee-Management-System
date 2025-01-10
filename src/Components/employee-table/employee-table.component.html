@@ -26,7 +26,10 @@
           <td>{{Employee.employeeID}}</td>
           <td>{{Employee.employeeName}}</td>
           <td>{{Employee.Salary}}</td>
-          <td><button class="edit-btn">Edit</button></td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn" (click)="deleteEmployee(Employee.employeeID)">Delete</button>
+          </td>
         </tr>
       </tbody>
     </table>

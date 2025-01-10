@@ -33,7 +33,7 @@ export const routes: Routes = [
                 path: "Employee_Table",
                 title: "Dashboard | Employee",
                 component: EmployeeTableComponent
-            },
+            }
         ]
     },
 
