@@ -16,32 +16,16 @@
       <thead class="table-dark">
         <tr>
           <th>Employee ID</th>
-          <th>Picture</th>
           <th>Name</th>
           <th>Salary</th>
           <th>Edit</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>101</td>
-          <td><img src="https://via.placeholder.com/50" alt="Employee Picture"></td>
-          <td>John Doe</td>
-          <td>$50,000</td>
-          <td><button class="edit-btn">Edit</button></td>
-        </tr>
-        <tr>
-          <td>102</td>
-          <td><img src="https://via.placeholder.com/50" alt="Employee Picture"></td>
-          <td>Jane Smith</td>
-          <td>$60,000</td>
-          <td><button class="edit-btn">Edit</button></td>
-        </tr>
-        <tr>
-          <td>103</td>
-          <td><img src="https://via.placeholder.com/50" alt="Employee Picture"></td>
-          <td>David Brown</td>
-          <td>$55,000</td>
+        <tr *ngFor="let Employee of Employees">
+          <td>{{Employee.employeeID}}</td>
+          <td>{{Employee.employeeName}}</td>
+          <td>{{Employee.Salary}}</td>
           <td><button class="edit-btn">Edit</button></td>
         </tr>
       </tbody>

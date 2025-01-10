@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { EmployeeTableComponent } from "../employee-table/employee-table.component";
-import { CompanyInformationComponent } from '../company-information/company-information.component';
 
 @Component({
   selector: 'app-employee-dashboard',
@@ -11,5 +9,4 @@ import { CompanyInformationComponent } from '../company-information/company-info
 })
 
 export class EmployeeDashboardComponent {
-  
 }

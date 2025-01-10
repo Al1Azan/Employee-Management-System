@@ -1,11 +1,9 @@
 import { Routes } from '@angular/router';
-import { EmployeeDashboardComponent } from '../../Components/employee-dashboard/employee-dashboard.component';
-import { HomeComponent } from '../../Components/home/home.component';
-import { CompanyInformationComponent } from '../../Components/company-information/company-information.component';
-import { homedir } from 'os';
-import { EmployeeTableComponent } from '../../Components/employee-table/employee-table.component';
-import path from 'path';
-import { PageNotFoundComponent } from '../../Components/page-not-found/page-not-found.component';
+import { HomeComponent } from '../Components/home/home.component';
+import { EmployeeDashboardComponent } from '../Components/employee-dashboard/employee-dashboard.component';
+import { CompanyInformationComponent } from '../Components/company-information/company-information.component';
+import { PageNotFoundComponent } from '../Components/page-not-found/page-not-found.component';
+import { EmployeeTableComponent } from '../Components/employee-table/employee-table.component';
 
 export const routes: Routes = [
     {                                                       //Default Routing
@@ -22,12 +20,8 @@ export const routes: Routes = [
 
     {
         path: "Employee_Dashboard",
-        title: "Dashboard",
-        component: EmployeeDashboardComponent
-    },
-
-    {
-        path: "Employee_Dashboard",
+        title: "Company Dashboard",
+        component:EmployeeDashboardComponent,
         children:[
             {
                 path: "Company_Information",
@@ -39,13 +33,13 @@ export const routes: Routes = [
                 path: "Employee_Table",
                 title: "Dashboard | Employee",
                 component: EmployeeTableComponent
-            }
+            },
         ]
     },
 
     {                                                      //Wildcard Routing
         path: "**",
         title: "Error 404",
-        component: PageNotFoundComponent,
+        component: PageNotFoundComponent
     }
 ];
